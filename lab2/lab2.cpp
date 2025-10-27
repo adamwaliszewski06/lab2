@@ -111,7 +111,60 @@ int main()
         } 
     }*/ 
 
-/* zad 8*/
+/* zad 8
+
+int i;
+for (i = 0; i <= 100; i = i + 2) {
+	cout << i << endl;
+}*/
+
+/* zad 9 
+int i, n;
+cout << "Enter a positive integer: ";
+cin >> n;
+for (i = 0; i <= 100; i++) {
+    if (i % n == 0) {
+        cout << i << endl;
+	}
+}*/
+
+/* zad 10 
+int i, n;
+int c = 0; //c od count
+cout << "Enter a positive integer: ";
+cin >> n;
+for (i = 0; i <= 100; i++) {
+    if (i % n == 0) {
+        cout << i << endl;
+        c = c + 1;
+    }
+}
+cout << "Count of numbers divisible by " << n << " is: " << c << endl;
+*/
+
+/* zad 11
+int a, b;
+cout << "Enter two positive integers (a and b): ";
+cin >> a;
+cin >> b;
+
+if (a < b) {
+    cout << "Numbers between " << a << " and " << b << " that atre divisible by 3 are: " << endl;
+    for (int i = a; i <= b; i++) {
+        if (i % 3 == 0) {
+            cout << i << endl;
+        }
+    }
+} 
+else if (b < a ) {
+    cout << "Numbers between " << b << " and " << a << " that atre divisible by 3 are: " << endl;
+    for (int i = b; i <= a; i++) {
+        if (i % 3 == 0) {
+            cout << i << endl;
+        }
+    } 
+} */
+
 
 
     return 0;
