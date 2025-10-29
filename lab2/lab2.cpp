@@ -180,7 +180,61 @@ for (int i=0; i<n; i++){
 cout << "The average of the given elements is: " << suma / n;
 */
 
-/* zad 13 - liczby od 100 do 0*/
+/* zad 13 - liczby od 100 do 0
+int i = 100;
+while (i >= 0) {
+    cout << i << " ";
+    i--;
+} */
+
+/* zad 14 - znajdz najmniejsza z 3 podanych liczb calkowitych 
+int a, b, c, smallest;
+cout << "Enter 3 whole numbers: " << endl;
+cin >> a >> b >> c;
+smallest = a;
+if (b < smallest)
+    smallest = b;
+if (c < smallest)
+    smallest = c;
+cout << "The smallest of the numbers is: " << smallest;
+*/
+
+
+/* zad 15 - losuje n liczb z przedzialu [0,m]
+
+#include <cstdlib>
+#include <ctime>
+
+int n, m;
+cout << "Enter how many numbers to draw: ";
+cin >> n;
+cout << "Enter the upper value of the range [0,m] from which you'll draw: ";
+cin >> m;
+
+if (n <= 0) {
+    cout << "Nothing to draw." << endl;
+    return 0;
+}
+if (m < 0) {
+    cout << "Range must be non-negative." << endl;
+    return 0;
+}
+
+srand(static_cast<unsigned>(time(nullptr)));
+
+for (int i = 0; i < n; ++i) {
+    int x = rand() % (m + 1); //draws in [0,m]
+    cout << x << " ";
+}
+*/
+
+/* zad 16 
+- Napisz program, który poprosi u¿ytkownika o podanie szczêœliwego numerka (liczby ca³kowitej) 
+z przedzia³u [1, 10]. Nastêpie wykonaj losowanie 10 liczb ca³kowitych z tego samego przedzia³u 
+i policz ile razy podczas tego losowania pojawi³ siê szczêœliwy numerek. */
+
+
+
 
 
     return 0;
