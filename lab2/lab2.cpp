@@ -231,9 +231,28 @@ for (int i = 0; i < n; ++i) {
 /* zad 16 
 - Napisz program, który poprosi u¿ytkownika o podanie szczêœliwego numerka (liczby ca³kowitej) 
 z przedzia³u [1, 10]. Nastêpie wykonaj losowanie 10 liczb ca³kowitych z tego samego przedzia³u 
-i policz ile razy podczas tego losowania pojawi³ siê szczêœliwy numerek. */
+i policz ile razy podczas tego losowania pojawi³ siê szczêœliwy numerek. 
+
+#include <cstdlib>
+#include <ctime>
+
+int lucky_number;
+int count=0;
+cout << "Enter a whole number [1-10]: ";
+cin >> lucky_number;
 
 
+srand(static_cast<unsigned>(time(nullptr)));
+
+for (int i = 0; i < 10; ++i) {  // draws a random number in [0,10], 10 times, and writes them out 
+    int x = rand() % (10 + 1); 
+    cout << x << " ";
+    if (x == lucky_number)
+        count++;
+}
+cout << endl << "Your number was drawn " << count << " times." << endl;
+
+*/
 
 
 
