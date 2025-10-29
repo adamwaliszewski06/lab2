@@ -165,12 +165,22 @@ else if (b < a ) {
     } 
 } */
 
-/* zad 12 */
-int n;
+/* zad 12 - srednia arytmetyczna 
+int n, a;
+int suma = 0;
 cout << "Enter the number of elements: ";
 cin >> n; 
 
-for (int i=0; i<n; i++){}
+for (int i=0; i<n; i++){
+    cout << "Enter an element: " << endl;
+    cin >> a;
+    suma = suma + a;
+}
+
+cout << "The average of the given elements is: " << suma / n;
+*/
+
+/* zad 13 - liczby od 100 do 0*/
 
 
     return 0;
